@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crypto Watchlist</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='styles.css')}}">
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="{{url_for('static', filename='script.js')}}"></script>
+<body>
+    <header>
+        <h1>AlgoTrader</h1>
+        <a href="{{url_for('about')}}"><h3>About Us</h3></a>
+          
+    </header>
+    <main>
+            <h2>Trade Signals</h2>
+            <div class="search">
+                <label for="tradingPair">Trading Pair:</label>
+                <input type="text" id="tradingPair" placeholder="Enter trading pair" list="pairList">
+                <datalist id="pairList"></datalist>
+                <button onclick="getTradingData()">Get Signals</button>
+            </div>
+            <div class="signal" id="signalsContainer">
+                <!-- Signals will be dynamically inserted here -->
+            </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

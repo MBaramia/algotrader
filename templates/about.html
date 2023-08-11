@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crypto Watchlist</title>
+  <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='styles.css')}}">
+  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="{{url_for('static', filename='script.js')}}"></script>
+</head>
+<body>
+    <header>
+        <h1>AlgoTrader</h1>
+        <nav>
+            <ul>
+                <li><a href="{{url_for('index')}}">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <p>
+                    AlgoTrader is a platform that employs algorithmic trading strategies to make informed trading decisions. Our primary trading strategy involves utilizing the crossover of two moving averages – the 50-day moving average and the 200-day moving average.
+                </p>
+                <p>
+                    The strategy generates signals based on the relationship between these moving averages. When the 50-day moving average crosses over the 200-day moving average, a "Buy" signal is triggered. Conversely, when the 50-day moving average crosses under the 200-day moving average, a "Sell" signal is generated.
+                </p>
+            </div>
+            <div class="chart">
+                <img src="{{ url_for('static', filename='movav.png') }}" alt="Moving Average Crossover Chart">
+            </div>
+        </div>
+    </main>
+</body>
+</html>
