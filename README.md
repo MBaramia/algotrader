@@ -1,6 +1,6 @@
 # AlgoTrader
 
-AlgoTrader is a platform that implements an algorithmic trading strategy based on moving average crossovers. The project aims to generate trading signals using the crossover of two moving averages – the 50-day moving average and the 200-day moving average.
+AlgoTrader is a platform that implements an algorithmic trading strategy based on moving average crossovers. The project aims to generate trading signals using the crossover of two moving averages – the 50-day moving average and the 200-day moving average. Involved is a stop-loss, take profit, which incorporates a 1:3 risk to reward ratio to ensure good risk management.
 
 ## Trading Strategy
 
