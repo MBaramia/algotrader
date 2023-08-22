@@ -29,8 +29,6 @@ AlgoTrader project involves the following technologies:
 3. Install dependencies: `pip install flask`
 4. Run the server: `python server.py`
 
-Access the platform by opening your web browser and navigating to `http://localhost:8000`.
-
 ## Disclaimer
 
 AlgoTrader is provided for educational and informational purposes only. Trading in financial markets involves significant risk, and past performance is not indicative of future results. The use of algorithmic trading strategies should be approached with caution and thorough understanding.
