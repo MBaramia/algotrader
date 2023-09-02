@@ -24,8 +24,8 @@ function fetchTradingPairs(tradingPair) {
 }
 
 function calculateRiskReward(entryPrice) {
-    const stopLoss = entryPrice - (3 * 0.01 * entryPrice); // 3% risk
-    const takeProfit = entryPrice + (1 * 0.01 * entryPrice); // 1% reward
+    const stopLoss = entryPrice - (1 * 0.01 * entryPrice); // 1% risk
+    const takeProfit = entryPrice + (3 * 0.01 * entryPrice); // 3% reward
     return { stopLoss, takeProfit };
 }
 
